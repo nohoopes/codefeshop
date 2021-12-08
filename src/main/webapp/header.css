@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Nobile:ital@1&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  .nav-bar{
+    display: grid;
+    height: 59px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 0px 1px, rgba(0, 0, 0, 0.09) 0px 2px 23px 0px;
+  }
+  
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+  
+  @media(min-width:750px){
+    .nav-bar{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  
+  }
+  
+  .branding {
+    
+    text-align: center;
+  }
+  
+  .branding h1{
+    font-family: Intrepid;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  
+  @media(min-width:550px){
+    .branding h1{
+      font-size: 22px;
+      margin-top: 15px;
+      min-width: 200px;
+    }
+  }
+  
+  @media(max-width:550px){
+    .branding h1{
+      font-size: 20px;
+      min-width: 190px;
+      margin-top: 15px;
+    }
+  }
+  
+  .menu ul{
+    display: flex;
+    justify-content: left;
+  }
+  
+  .menu li{
+    list-style: none;
+    position: relative;
+    padding: 10px 15px;
+    margin-top: 8px;
+    font-family: Intrepid;
+    letter-spacing: 2px;
+  }
+  @media (min-width:470px){
+  .menu li{
+    font-size: 14px;
+   }
+  }
+  
+  @media (max-width:470px){
+    .menu li{
+      font-size: 12px;
+    }
+  }
+  
+  .menu li a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .menu{
+    width: 80%;
+  }
+  
+ 
+  
+  @media(min-width:750px){
+   
+  
+    .menu-icon{
+      order:3;
+    }
+  
+    .menu-icon{
+      width: 0px;
+    }
+  }
+  
+  
+  .cart-img{
+    background:url('./Hinh_anh/bag.png');
+    height: 35px;
+    width: 35px;
+    background-size: 100% 100%;
+    order: 2;
+    cursor:pointer;
+    margin-top: 6px;
+    margin-left: 80%;
+    transition: 0.5s;
+  }
+  
+
+  
+  @media(max-width:750px){
+    .menu ul{
+      display: block;
+      text-align:left;
+      margin-top: 10px;
+      
+    }
+    .branding{
+      order: 2;
+    }
+    .nav-bar{
+      grid-template-columns: 1fr 1fr 1fr ;
+    }
+    .menu ul li{
+      display: block;
+    }
+    
+    .cart-img{
+      margin-left: 10vw;
+    }
+    
+    .menu-icon{
+      background:url('./Hinh_anh/category.png');
+      height: 35px;
+      width: 35px;
+      background-size: 100% 100%;
+      order: 1;
+      cursor:pointer;
+      margin-top: 6px;
+      margin-left: 6px;
+      transition: 0.5s;
+  
+    }
+  
+    .nav-bar{
+      height: auto;
+    
+    }
+    
+    .menu{
+      width: auto;
+      height: 10px;
+      overflow: hidden;
+      order: 4;
+      
+    }
+  
+    #check:checked ~.menu{
+      height: auto;
+      overflow: visible;
+  
+    }
+    #check:checked ~.menu-icon{
+      transform: rotate(90deg);
+      transition: 0.5s;
+    }
+   
+  }
+  
+  
+  .your-cart{
+      position:fixed;
+      padding: 50px 20px;
+      font-family: Montserrat;
+      font-weight: bold;
+      height: 100vh;
+      background: black;
+      transition: 0.5s;
+      z-index: 10000;
+      color: white;
+      overflow-y: auto;
+     
+      top:0px;;
+  }
+@media(min-width:750px){
+    .your-cart{
+        width: 30%;
+        left:-30%;
+        
+    }
+}
+
+@media(max-width:750px){
+    .your-cart{
+        width: 50%;
+        left:-50%;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:550px){
+    .your-cart{
+        width: 70%;
+        left:-70%;
+    }
+}
+
+  #cart:checked ~.your-cart{
+    left: 0px;
+    transition: 0.5s;
+
+  }
+
+  .item-info{
+    display: flex;
+    column-gap: 10%;
+    font-family: Montserrat;
+    font-weight: bold;
+   
+  }
+
+  @media(max-width:550px){
+    .item-info{
+      font-size: 12px;
+    }
+  }
+
+  .item-img{
+    background-size: 100% 100%;
+    background-color: white;
+    margin-left: 20%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  @media(min-width:750px){
+    .item-img{
+    height: 80px;
+    width: 80px;
+    }
+  }
+  @media(max-width:750px){
+    .item-img{
+    height: 60px;
+    width: 60px;
+    }
+  }
+
+  .Total{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+  }
+
+  .item{
+    margin-bottom: 30px;
+  }

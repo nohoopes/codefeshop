@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+@import url(//db.onlinewebfonts.com/c/ba0ce01bddb5962e6ae43bcebc18af07?family=Intrepid);
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Great+Vibes&family=Sacramento&display=swap');
+
+
+body {
+    background-image:url('../Hinh_anh/Contact_.jpg');
+    background-position: 0px -90px;
+    background-size: cover;
+}
+
+.container-contact {
+    width: 40vw;
+    min-width: 320px;
+    height: 100vh;
+    background-color: hsla(43, 25.71%, 64.28%, 0.87);
+  }
+  
+.container.div-block {
+    height: 100vh;
+    font-family: Bitter;
+}
+
+.contactto {
+    padding-top: 8.8vw;
+    padding-bottom: 5px;
+    padding-left: 24%;
+    font-family: great vibes;
+    
+    font-weight: 400;
+  }
+
+  @media(min-width:750px){
+    .contactto{
+      font-size: 40px;
+    }
+    .our-store{
+      font-size: 40px;
+    }
+    .form-container .input-item{
+      font-size: 16px;
+
+    }
+    .form-container p{
+      font-size: 20px;
+    }
+  }
+
+  @media(max-width:750px){
+    .contactto{
+      font-size: 30px;
+    }
+    .our-store{
+      font-size: 30px;
+    }
+    .form-container .input-item{
+      font-size: 12px;
+
+    }
+    .form-container p{
+      font-size: 14px;
+    }
+  }
+.our-store {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 34%;
+    font-family: Great Vibes;
+    font-weight: 400;
+    text-align: left;
+  }
+.line {
+    position: static;
+    display: block;
+    width: 30%;
+    height: 1.5px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    background-color: hsla(0, 0.00%, 0.00%, 1.00);
+    text-align: center;
+  }
+
+.form-container{
+        height: 30vw;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 5%;
+        padding-right: 2.5vw;
+        padding-left: 2.7vw;
+}
+.form-container .input-item {
+        width: 90%;
+        height: 30px;
+        margin-right: auto;
+        margin-left: 4%;
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        background-color: transparent;
+        font-family: Montserrat;
+        color: rgb(10, 10, 10);
+        line-height: 15px;
+        font-weight: 400;
+        border: none;
+        outline: none;
+        border-bottom: black 1px solid;
+        margin-top: 8px;
+        margin-bottom: 6px;
+        
+}
+.form-container p{
+        width: auto;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: Montserrat;
+      
+        font-weight: 400;
+      
+}
+.submit-button {
+  width: 120px;
+  margin-top: 17px;
+  margin-right: 35%;
+  margin-left: 35%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: none;
+  background-color: hsla(41, 39.56%, 44.04%, 1.00);
+  transition-property: opacity;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  background-clip: border-box;
+  color: aliceblue;
+  height: 35px;
+
+}
+

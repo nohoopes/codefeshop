@@ -1,0 +1,57 @@
+.date{
+    margin-top: 2vw;
+    text-align: center;
+    font-size: 18px;
+}
+
+.line{
+    width: 30%;
+    margin: auto;
+    background: black;
+    height: 1px;
+    min-width: 250px;
+    margin-top: 5px;
+}
+
+.title{
+    width: 40%;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    color: #7a6b47;
+    border-bottom: black 2px solid;
+    margin-bottom: 50px;
+   
+}
+@media (min-width:750px){
+    .title{
+        font-size: 2.2vw;
+        margin-top: 2vw;
+        padding-bottom: 2vw;
+    }
+}
+@media (max-width:750px){
+    .title{
+        font-size: 5.2vw;
+        margin-top: 3vw;
+        padding-bottom: 3vw;
+    }
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.container img{
+    height: auto;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+}
+body{
+    position: relative;
+}

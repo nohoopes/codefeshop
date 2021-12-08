@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sacramento&display=swap');
+@import url(//db.onlinewebfonts.com/c/ba0ce01bddb5962e6ae43bcebc18af07?family=Intrepid);
+
+.container-story{
+    width: 90%;
+    margin: auto;
+ 
+    
+}
+
+.foundation{
+    text-align: center;
+    font-size: 8vw;
+    font-family: intrepid;
+    background-image: linear-gradient(to bottom, #ae7c1d, #a87719, #a27115, #9d6c11, #97670c, #9c6f15, #a2761d, #a77e24, #b89538, #c9ac4d, #dac462, #ebdd78);
+    color:transparent;
+    -webkit-background-clip: text;
+
+}
+
+.line{
+    height: 0.8vw;
+    width: 100%;
+    background-image: linear-gradient(to right, #ae7c1d, #a87719, #a27115, #9d6c11, #97670c, #9c6f15, #a2761d, #a77e24, #b89538, #c9ac4d, #dac462, #ebdd78);
+    margin: auto;
+    margin-top: 30px;
+    
+}
+
+.info-1{
+    margin-top: 5vw;
+}
+
+@media (min-width:750px){
+    .info-1 {
+        display: grid;
+        grid-template-columns: 53% 45%;
+        column-gap: 2%;
+      
+    }
+}
+
+@media (max-width:750px){
+    .info-1 {
+        display: grid;    
+    }
+}
+
+
+
+
+
+
+.Circle-img{
+    
+    border-radius: 100%;
+    background: url('../Hinh_anh/poster-2.png');
+    background-size: 105% 105%;
+    overflow: hidden;
+}
+
+@media(min-width:750px){
+    .Circle-img{
+       
+        height: 28vw;
+        margin-left: 4vw;
+        width: 28vw;
+    }
+}
+
+@media(max-width:750px){
+    .Circle-img{
+        height: 45vw;
+        width: 45vw;
+        margin-left: 23vw;
+    }
+}
+
+
+.Circle-ground{
+    position:relative;
+    height:100%;
+    width: 100%;
+    border-radius: 98%;
+}
+
+@media(max-width:750px){
+    .Circle-ground{
+        background:rgba(0, 0, 0, 0.6);
+    }
+}
+
+.info-1 h2{
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-align: center;
+    
+}
+
+@media(min-width:750px){
+    .info-1 h2{
+        font-family: Sacramento;
+        font-size: 5vw;
+        margin-top:3vw;
+    }
+}
+
+@media(max-width:750px){
+    .info-1 h2{
+        font-family: Sacramento;
+        font-size: 10vw;
+        margin-top: -10vw;
+     
+    }
+}
+
+
+@media (min-width:750px){
+    .Circle-img:hover h2{
+        margin-top: -17vw;
+        transition: 1s;
+        
+        
+    }
+    
+    .Circle-img:hover .Circle-ground{
+        background:rgba(0, 0, 0, 0.6);
+        transition: 1s;
+    }
+    
+    
+    .Circle-img:hover {
+        background-position: 0 -20px;
+        transition: 1s;
+     }
+    
+     .Circle-img:hover .Circle-border{
+        transform: rotate(0deg);
+        transition: 1s;
+    
+    }
+
+}
+
+
+@media(min-width:750px){
+    .Circle-border{
+        border-top: 1vw solid rgb(196, 183, 158);
+        border-left: 1vw solid rgb(196, 183, 158);
+        border-right: 1vw solid rgb(196, 183, 158);
+        border-bottom: 1vw solid transparent;
+
+    }
+}
+
+.Circle-border{
+    height: 28vw;
+    width: 28vw;
+    border-radius: 100%;
+    transform: rotate(-190deg);
+}
+
+.info-1-content{
+    
+    font-family: Intrepid;
+    margin-top: 5vw;
+}
+
+@media(min-width:750px){
+    .info-1-content{
+        font-size: 1.5vw;
+    }
+}
+
+@media(max-width:750px){
+    .info-1-content{
+        font-size: 3vw;
+        text-align: center;
+        margin-bottom: 4vw;
+    }
+}
+
+.info-2{
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.info-2-img {
+    height: 35vw;
+    width: 70vw;
+    margin: auto;
+    margin-top: 5vw;
+    overflow: hidden;
+    
+}
+
+.rec-ground{
+    background:rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+}
+
+.rec-img{
+    background:url('../Hinh_anh/found.jpg');
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    
+}
+
+
+.word{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding-top: 10px;
+    display: flex;
+    
+    
+}
+
+.rect:nth-child(1){
+    height: 25vw;
+    width: 0.3vw;
+    background: rgb(245, 245, 245);
+    margin-top: -30vw;
+    margin-left: 5vw;
+}
+
+.info-2-img:hover .rect:nth-child(1){
+    margin-top: 3vw;
+    transition: 1s;
+}
+
+.rect:nth-child(2){
+    height: 0.3vw;
+    width:  53vw;
+    background: rgb(255, 255, 255);
+    margin-top: 10vw;
+    margin-left: -70vw;
+}
+.info-2-img:hover .rect:nth-child(2){
+    margin-left: -5vw;
+    transition: 1s;
+}
+
+.rect:nth-child(3){
+    height: 25vw;
+    width: 0.3vw;
+    background: rgb(255, 255, 255);
+    margin-left: 60vw;
+    margin-top: 50vw;
+}
+.info-2-img:hover .rect:nth-child(3){
+    margin-left:-5vw;
+    margin-top: 6vw;
+    transition: 1s;
+}
+
+.rect:nth-child(4){
+    height: 0.3vw;
+    width:  53vw;
+    background: rgb(255, 255, 255);
+    margin-top: 24vw;
+    margin-left: -50vw;
+    
+
+}
+
+.info-2-img h2{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: Sacramento;
+    font-size: 8vw;
+    margin-left: 20vw;
+    margin-top: 15vw;
+}
+
+.info-2-img:hover h2{
+    margin-top: -16vw;
+    transition: 1s;
+}
+
+.info-2-content{
+    font-family: Intrepid;
+    margin-top: 5vw;
+    text-align: center;
+}
+
+@media(min-width:750px){
+    .info-2-content{
+        font-size: 1.5vw;
+    }
+}
+
+@media(max-width:750px){
+    .info-2-content{
+        font-size: 3vw;
+        
+    }
+}
+
+.info-3{
+    display: grid;
+    margin-top: 5vw;
+}
+
+@media(min-width:750px){
+    .info-3{
+       
+        grid-template-columns: 30% 65%;
+        column-gap: 5%;
+    }
+}
+
+@media(max-width:750px){
+    .info-3{   
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+.info-3-img{
+    
+    background: url('../Hinh_anh/info-3.png');
+    background-size: 100% 100%;
+    overflow: hidden;
+    
+}
+
+
+@media(min-width:750px){
+    .info-3-img{
+        height: 40vw;
+    }
+
+    .info-3-img:hover{
+        background: url('../Hinh_anh/info-3-blur.png');
+        background-size: 100% 100%;
+        transition: 0.8s;
+    }
+
+    .info-3-img:hover .info-3-ground{
+        margin-top: 8vw;
+        transition: 0.8s;
+    }
+}
+
+
+
+
+
+@media(max-width:750px){
+    .info-3-img{
+        height: 80vw;
+        background: url('../Hinh_anh/info-3-blur.png');
+        background-size: 100% 100%;
+      
+    }
+}
+
+
+
+
+.info-3-ground{
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    background:url('../Hinh_anh/info-3.png');
+    background-size: 100% 100%;
+   
+}
+
+
+@media(min-width:750px){
+    .info-3-ground{
+        margin-top: 60vw;
+    }
+}
+
+@media(max-width:750px){
+    .info-3-ground{
+        margin-top: 16vw;
+    }
+}
+
+.info-3-title{
+    color: seashell;
+    width: 100%;
+    height: 100%;
+    border: 0.3vw solid white;
+    text-align: center;
+    font-family: Sacramento;
+    font-weight: bold;
+   
+}
+
+@media(min-width:750px){
+    .info-3-title{
+        font-size: 2vw;
+        padding-top: 10vw;
+
+    }
+}
+
+@media(max-width:750px){
+    .info-3-title{
+        font-size: 5vw;
+        padding-top: 16vw;
+
+    }
+}
+
+.info-3-content{
+    font-family: Intrepid;
+    
+}
+
+@media(min-width:750px){
+    .info-3-content{
+        font-size: 1.5vw;
+    }
+}
+@media(max-width:750px){
+    .info-3-content{
+        font-size: 3vw;
+        text-align: center;
+    }
+}

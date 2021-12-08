@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Source+Serif+Pro:wght@400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato',sans-serif;
+    font-size: 16px;
+    color: #21282d;
+    
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url("../Hinh_anh/returnbackground.png");
+}
+
+#container .head-title {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.review-item {
+    background-color: #f9f8f4;
+    margin: 10px;
+    padding: 20px;
+    width: 800px;
+}
+
+.review-item .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.review-item > ul {
+    list-style-type: none;
+}
+
+.review-item > ul > li {
+}
+
+.review-item > ul > li .message {
+    float: left;
+    width: 155px;
+}
+
+#pay-btn {
+    font-size: 16px;
+    /* text-transform: uppercase; */
+    margin: 15px 278px;
+    padding: 13px 100px;
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+}
+
+#pay-btn:hover {
+    cursor: pointer;
+    background-color: #c0c0c0;
+}

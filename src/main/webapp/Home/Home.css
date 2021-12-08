@@ -1,0 +1,364 @@
+@import url(//db.onlinewebfonts.com/c/ba0ce01bddb5962e6ae43bcebc18af07?family=Intrepid);
+@import url('https://allfont.net/allfont.css?fonts=lucida-sans-unicode');
+@import url('http://fonts.cdnfonts.com/css/bahnschrift');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.showcase{
+    margin-top: 0px;
+    
+}
+
+
+
+body{
+    background-color: rgb(246, 245, 243);
+    
+}
+
+
+.image{
+    width: 65%;
+    background-color: rgb(114, 122, 114);
+    height: 500px;
+    margin-top: 50px;
+    overflow: hidden;
+   
+    
+}
+
+
+
+.slider{
+    width: 100%;
+    height: 800px;
+    height: 53vw;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 800px;
+    height: 53vw;
+    display: flex;
+
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+    height: 800px;
+    height: 53vw;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: 670px;
+    margin-top: 43.7vw;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+ 
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 670px;
+    margin-top: 43.7vw;
+}
+
+.navigation-auto div{
+    border:2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background:white ;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background:white ;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background:white ;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background:white ;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    margin-top: 6vw;
+}
+
+.info-1{
+    height: auto;
+}
+
+@media(min-width:750px){
+    .info-1{
+        display: grid;
+        grid-template-columns: 70% 25%;
+        column-gap: 5%;
+    }
+}
+
+.info-1-img img{
+    width: 100%;
+    height: auto;
+}
+
+.info-1-content{
+    margin-top: 6vw;
+}
+
+
+
+@media(min-width:750px){
+    .info-header-1{
+        text-align: right;
+    }
+
+    .info-header-1{
+        font-size: 3vw;
+        font-family: Bahnschrift;
+    }
+    
+    .info-header-1 h2{
+        font-size: 5.3vw;
+    }
+    
+    .info-content-1{
+        font-size: 1.3vw;
+        text-align: right;
+        line-height: 1.7;
+    }
+}
+
+@media(max-width:750px){
+    .info-header-1{
+        text-align: center;
+    }
+
+    .info-header-1{
+        font-size: 5vw;
+        font-family: Bahnschrift;
+    }
+    
+    .info-header-1 h2{
+        font-size: 8vw;
+    }
+    
+    .info-content-1{
+        font-size: 3.2vw;
+        text-align: center;
+    }
+}
+
+.info-2{
+    margin-top: 6vw;
+}
+
+.info-2-img img{
+    width: 100%;
+    height: auto;
+}
+
+.info-2-content{
+    margin-top: 4vw;
+}
+
+
+@media(min-width:750px){
+    .info-2-content{
+        order: 1;
+    }
+    .info-2{
+        display: grid;
+        grid-template-columns: 57% 38%;
+        column-gap: 5%;
+        height: auto;
+    }
+    
+    .info-2-img{
+        order: 2;
+    }
+
+    .info-header-2{
+        text-align: left;
+    }
+
+    .info-header-2{
+        font-size: 3vw;
+        font-family: Bahnschrift;
+    }
+    
+    .info-header-2 h2{
+        font-size: 5.3vw;
+    }
+    
+    .info-content-2{
+        font-size: 1.3vw;
+        text-align: left;
+        line-height: 1.7;
+    }
+    
+}
+
+@media(max-width:750px){
+    .info-header-2{
+        text-align: center;
+    }
+
+    .info-header-2{
+        font-size: 5vw;
+        font-family: Bahnschrift;
+    }
+    
+    .info-header-2 h2{
+        font-size: 8vw;
+    }
+    
+    .info-content-2{
+        font-size: 3.2vw;
+        text-align: center;
+    }
+}
+
+.info-3{
+    margin-top: 6vw;
+}
+
+
+
+.info-3-content{
+    margin-top: 2vw;
+}
+@media(min-width:750px){
+    .block{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .block{
+        background: url("../Hinh_anh/Home/mockup.png");
+        background-size: 100% 100%;
+    }
+
+    .info-3{
+        display: grid;
+        grid-template-columns: 57% 38%;
+        column-gap: 5%;
+        height: auto;
+    }
+    
+
+    .info-header-3{
+        text-align: centers;
+    }
+
+    .info-header-3{
+        font-size: 3vw;
+        font-family: Bahnschrift;
+        text-align: center;
+    }
+    
+    .info-header-3 h2{
+        font-size: 5.3vw;
+        text-align: center;
+    }
+    
+    .info-content-3{
+        font-size: 1.3vw;
+        text-align: center;
+        line-height: 1.7;
+    }
+    
+}
+
+@media(max-width:750px){
+    .block{
+        width: 100%;
+        height:50%;
+    }
+    
+    .block{
+        background: url("../Hinh_anh/Home/mockup-poster.jpg");
+        background-size: 100% 100%;
+    }
+
+    .info-header-3{
+        text-align: center;
+    }
+
+    .info-header-3{
+        font-size: 5vw;
+        font-family: Bahnschrift;
+    }
+    
+    .info-header-3 h2{
+        font-size: 8vw;
+    }
+    
+    .info-content-3{
+        font-size: 3.2vw;
+        text-align: center;
+    }
+}
