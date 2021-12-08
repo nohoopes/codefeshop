@@ -8,9 +8,12 @@ package Servlet;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
+import model.paypal.URLUtil;
 import model.vnpay.Config;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
@@ -74,7 +77,17 @@ public class ajaxServlet extends HttpServlet {
         } else {
             vnp_Params.put("vnp_Locale", "vn");
         }
-        vnp_Params.put("vnp_ReturnUrl", Config.vnp_Returnurl);
+        String return_url = null;
+		try {
+			return_url = URLUtil.getCurrentUrl(req) + "vnpay_return.jsp";
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (URISyntaxException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        vnp_Params.put("vnp_ReturnUrl", return_url);
         vnp_Params.put("vnp_IpAddr", vnp_IpAddr);
 
         Date dt = new Date();
