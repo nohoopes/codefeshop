@@ -22,12 +22,12 @@
         </label>
         <div class="menu">
              <ul>
-                <li><a href="${pageContext.request.contextPath}/Home/Home.jsp">HOME</a></li>
+             <li><a href="${pageContext.request.contextPath}/HomeController">HOME</a></li>
                 <li><a href="${pageContext.request.contextPath}/Story/ourstory.jsp">STORY</a></li>
-                <li><a href="${pageContext.request.contextPath}/HomeController">MENU</a></li>
+                <li><a href="${pageContext.request.contextPath}/MenuController">MENU</a></li>
                 <li><a href="${pageContext.request.contextPath}/New/News.jsp">NEWS</a></li>
                 <li><a href="${pageContext.request.contextPath}/Contact/Contact.jsp">CONTACT</a></li>
-                <li><a href="${pageContext.request.contextPath}/Login/codefelogin.jsp">LOGIN</a></li>
+                <li><a href="${pageContext.request.contextPath}/CusLoginController" method="post">LOGIN</a></li>
             </ul>
         </div>
 
@@ -63,7 +63,7 @@
 
 
             <div class = "Total">Total: ${total} vnd</div>
-            <a href="CheckoutController">
+            <a href="${pageContext.request.contextPath}/CheckoutController">
                 <button>Check out</button>
             </a>
 

@@ -21,7 +21,7 @@
         </label>
         <div class="menu">
             <ul>
-				<li><a href="${pageContext.request.contextPath}/HomeController">HOME</a></li>
+			<li><a href="${pageContext.request.contextPath}/HomeController">HOME</a></li>
                 <li><a href="${pageContext.request.contextPath}/Story/ourstory.jsp">STORY</a></li>
                 <li><a href="${pageContext.request.contextPath}/MenuController">MENU</a></li>
                 <li><a href="${pageContext.request.contextPath}/New/News.jsp">NEWS</a></li>
@@ -62,7 +62,7 @@
 
 
             <div class = "Total">Total: ${total} vnd</div>
-            <a href="CheckoutController">
+            <a href="${pageContext.request.contextPath}/CheckoutController">
                 <button>Check out</button>
             </a>
 

@@ -62,7 +62,7 @@
 
 
             <div class = "Total">Total: ${total} vnd</div>
-            <a href="CheckoutController">
+            <a href="${pageContext.request.contextPath}/CheckoutController">
                 <button>Check out</button>
             </a>
 

@@ -71,7 +71,7 @@
     conBil.addBill(bil);
     
     Mail mail= new Mail();
-    //  mail.Send(bil.getAddress().toString(), "Your purchase bill", "Thank you, "+bil.getCusname()+". Your purchase was successful, your total money is: "+bil.getTotal()+", your product will be devileried as soon as possible. Hope you have a greatful time when choosing your products!");
+    mail.Send(bil.getEmail(), "Your purchase bill", "Thank you, "+bil.getCusname()+". Your purchase was successful, your total money is: "+bil.getTotal()+", your product will be devileried as soon as possible. Hope you have a greatful time when choosing your products!");
     
     String vnp_SecureHash = request.getParameter("vnp_SecureHash");
     if (fields.containsKey("vnp_SecureHashType")) {
